@@ -1,0 +1,101 @@
+body {
+    background-color: #F3F7FA;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #273364;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.header-position {
+    margin-top: 3px;
+    font-size: 13px;
+}
+
+.title {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #273364;
+}
+
+.text {
+    color: #606579;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.formElement {
+    height: 60px;
+    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 7px;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #D4D4D9;
+}
+
+.phone {
+    display: flex;
+}
+
+.phoneCode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    background-color: #ffffff;
+    border: 1px solid #D4D4D9;
+    border-right: none;
+    border-radius: 7px 0 0 7px;
+}
+
+.phoneNumber {
+    width: 100%;
+    border-radius: 0 7px 7px 0;
+}
+
+.marks {
+    display: flex;
+}
+
+.mark {
+    position: relative;
+    width: 30px;
+    border: 1px solid #D4D4D9;
+
+}
+
+.mark > input {
+}
+
+.mark > label {
+    position: absolute;
+}
+
+.button {
+    background: linear-gradient(90deg, #36519B -0.03%, #4B77B7 100%);
+    color: #ffffff;
+}
