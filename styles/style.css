@@ -1,6 +1,8 @@
 body {
     background-color: #F3F7FA;
     margin: 0;
+    height: 100vh;
+    padding-top: 70px;
 }
 
 .container {
@@ -11,15 +13,25 @@ body {
 
 .header {
     background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: right;
     padding-bottom: 20px;
     padding-top: 20px;
     color: #273364;
     text-transform: uppercase;
     font-size: 15px;
+    font-weight: 700;
+    width: 100vw;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-position {
@@ -31,6 +43,7 @@ body {
     margin-top: 30px;
     font-size: 24px;
     color: #273364;
+    font-weight: 700;
 }
 
 .text {
@@ -42,7 +55,6 @@ body {
 .form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
 }
 
 .formElement {
@@ -56,6 +68,10 @@ body {
     padding: 10px;
     border: 1px solid #D4D4D9;
 }
+
+/*.input:invalid {*/
+/*    box-shadow: 0 0 7px 3px rgba(255, 0, 0, 0.4);*/
+/*}*/
 
 .phone {
     display: flex;

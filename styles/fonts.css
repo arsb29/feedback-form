@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(../fonts/AvenirNextCyr-Regular.ttf) format('ttf'), url(../fonts/AvenirNextCyr-Regular.woff2) format('woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url(../fonts/AvenirNextCyr-Bold.ttf) format('ttf'), url(../fonts/AvenirNextCyr-Bold.woff2) format('woff2');
+    font-weight: 700;
+}
