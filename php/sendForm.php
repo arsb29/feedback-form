@@ -6,7 +6,7 @@ if ($mysqli -> connect_errno) {
     exit();
 }
 
-$sql = "INSERT INTO clients VALUES ('" . $_POST["fio"] . "');";
+$sql = "INSERT INTO clients VALUES ('" . $_POST["organizationName"] . "', '" . $_POST["fio"] . "', '" . $_POST["phone"] . "', '" . $_POST["mark"] . "', '" . $_POST["products"] . "', '" . $_POST["date"] . "');";
 $result = $mysqli -> query($sql);
 $mysqli->close();
 // Переводим массив в JSON

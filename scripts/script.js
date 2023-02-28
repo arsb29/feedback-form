@@ -28,6 +28,8 @@ function formSend(event) {
         element.querySelector('.item-text').textContent)
     ).join(', ');
     formData.append('products', products);
+    const date = getDate();
+    formData.append('date', date);
     const button = document.querySelector('#submitButton');
     button.textContent = 'Загрузка...';
     button.disabled = true;
@@ -40,7 +42,7 @@ function formSend(event) {
             if (!res.result) {
                 throw new Error();
             } else {
-                document.location.assign('./pages/success.html');
+                // document.location.assign('../success.html');
             }
         })
         .catch(() => {
@@ -90,4 +92,9 @@ function prettyProducts(number) {
     if (number === 1) return 'Выбран 1 продукт';
     if (number < 5) return `Выбрано ${number} продукта`;
     return `Выбрано ${number} продуктов`;
+}
+
+function getDate() {
+    const nowDate = new Date();
+    return nowDate.toISOString().slice(0,10);
 }

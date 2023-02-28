@@ -234,6 +234,48 @@ main {
     color: #ffffff;
 }
 
+.code {
+    height: 60px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #36519B -0.01%, #4B77B7 100.02%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.list li {
+    margin-top: 5px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.info {
+    font-size: 20px;
+    color: #29377D;
+}
+
+.info * {
+    color: #29377D;
+}
+
+.image {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 40%;
+}
+
+.image img {
+    width: 100%;
+}
+
 .button {
     background: linear-gradient(90deg, #36519B -0.03%, #4B77B7 100%);
     color: #ffffff;

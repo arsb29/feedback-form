@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Скачать</title>
+    <link rel="stylesheet" href="styles/null.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header-row container">
+        <div><img src="./assets/vtb.svg" alt="Банк ВТБ" srcset=""></div>
+        <div>
+            <div class="header-name">Денис Ивкин</div>
+            <div class="header-position">Клиентский менеджер</div>
+        </div>
+    </div>
+</header>
+<main class="container">
+    <form action="./php/downloadExcel.php" method="post" class="form">
+        <div class="form-floating">
+            <input
+                    class="formElement input form-control"
+                    type="text"
+                    name="date"
+                    placeholder="Код"
+                    id="code"
+            >
+            <label for="code">Код</label>
+        </div>
+        <div class="form-floating">
+            <input
+                    class="formElement input form-control"
+                    type="text"
+                    name="date"
+                    placeholder="Дата"
+                    id="date"
+            >
+            <label for="date">Дата</label>
+        </div>
+        <button class="formElement button" id="submitButton" type="submit">Отправить</button>
+    </form>
+</main>
+</body>
+</html>
