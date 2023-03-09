@@ -42,7 +42,7 @@ function formSend(event) {
             if (!res.result) {
                 throw new Error();
             } else {
-                // document.location.assign('../success.html');
+                document.location.assign('../success.html');
             }
         })
         .catch(() => {

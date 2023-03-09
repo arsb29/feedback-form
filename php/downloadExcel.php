@@ -4,7 +4,11 @@ if ($_POST["code"] == "2465") {
     mysqli_set_charset($conn,"utf8");
     mysqli_query($conn,'SET character_set_database = utf8');
     mysqli_query ($conn,"SET NAMES 'utf8'");
-    $sql = "SELECT * FROM `clients` WHERE `date` = '" . $_POST["date"] . "'";
+    if ($_POST["date"] === "") {
+        $sql = "SELECT * FROM `clients`";
+    } else {
+        $sql = "SELECT * FROM `clients` WHERE `date` = '" . $_POST["date"] . "'";
+    }
     $setRec = mysqli_query($conn, $sql);
     $columnHeader = "Название организации" . "\t" . "ФИО" . "\t" . "Телефон" . "\t" . "Оценка" . "\t" . "Продукты" . "\t" . "Дата" . "\t";
     $setData = '';
