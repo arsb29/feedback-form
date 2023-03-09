@@ -1,5 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+    addProducts();
+
     choices();
 
     maskedPhone();
@@ -7,6 +9,30 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
     form.addEventListener('submit', formSend);
 })
+
+const PRODUCTS = [
+    'Кредит наличными',
+    'Кредитная карта',
+    'Карта для пенсионеров',
+    'Зарплатная карта',
+    'Счёт или вклад',
+    'Ипотека',
+    'Карта «Армия России»',
+    'Карта Петербуржца',
+    'Автокредит',
+    'Я ещё подумаю'
+];
+
+function addProducts() {
+    const listOfProducts = document.querySelector('.list-items');
+    const result = PRODUCTS.reduce((res, product) => res +`
+        <li class="item">
+            <span class="checkbox"></span>
+            <span class="item-text">${product}</span>
+        </li>
+    `, '');
+    listOfProducts.innerHTML = result;
+}
 
 function formSend(event) {
     event.preventDefault();
